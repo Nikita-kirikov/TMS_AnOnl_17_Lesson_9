@@ -8,7 +8,7 @@ public class ConfirmUser {
 
 
         if (!login.isEmpty() && login.length() < 20 && !login.matches(".*\\s.*")) {
-                isValidLogin = true;
+            isValidLogin = true;
         } else {
             throw new WrongLoginException("Логин не соответствует требованиям");
         }
